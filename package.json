@@ -1,0 +1,17 @@
+{
+  "name": "playlist-downloader",
+  "version": "0.0.1",
+  "description": "A tool to download a youtube playlist as music",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabbinetto",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^5.3.1",
+    "express": "^4.18.2",
+    "ytdl-core": "^4.11.2",
+    "ytpl": "^2.3.0"
+  }
+}
