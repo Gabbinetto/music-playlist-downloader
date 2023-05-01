@@ -2,7 +2,7 @@ const button = document.getElementById("download-button");
 const urlInput = document.getElementById("url-input");
 const interface = document.getElementById("interface");
 const thankyou = document.getElementById("thankyou");
-
+const metadataCheck = document.getElementById("add-metadata");
 
 button.onclick = download
 urlInput.onkeyup = (key) => {if (key == "Enter") download()};
@@ -25,5 +25,11 @@ function download() {
 
 
     // Go to download
-    window.location.href = "download?url=" + encodeURIComponent(urlInput.value)
+    let destination = "download?url=" + encodeURIComponent(urlInput.value);
+    if (metadataCheck.checked) {
+        destination += "&metadata=true"
+    }
+
+
+    window.location.href = destination
 }

@@ -19,9 +19,30 @@
             <button class="btn btn-outline-primary" type="button" id="download-button">Download</button>
         </div>
 
-        <p>
+        <p class="mb-3">
             It may take a long time depending on the size of the playlist. <br>
-            Wait for it to load.
+            Wait for it to load. <br> <br>
+        </p>
+
+        <input type="checkbox" class="form-check-input p-2" id="add-metadata" checked>&nbsp; Add ID3 tags</input>       
+        <p class="mt-1">
+            ID3 tags are metadata inside mp3 files that define stuff like the song author or album. <br>
+            These are often used by media players to display song information. <br>
+            Turning this on will set:
+        </p> 
+        <div class="d-flex text-center">
+            <ul class="text-start mx-auto">
+                <li>The <b>song's title</b> to the video title</li>
+                <li>The <b>song's artist</b> to the video author</li>
+                <li>The <b>song's album</b> to the playlist title</li>
+                <li>The <b>song's album artist</b> to the playlist author</li>
+                <li>The <b>song's track number</b> to the video's index inside the playlist</li>
+                <li>The <b>song's cover</b> to the video's thumbnail</li>
+            </ul>
+        </div>
+
+        <p class="mt-1">
+            It may cause the process to take longer.
         </p>
 
     </div>
@@ -29,12 +50,13 @@
     <div id="thankyou" class="container text-center mt-5" style="visibility: hidden;">
 
         <h1>Thank you for using this service</h1>
+        <p id="logger"></p>
 
     </div>
 
 
-
     <script src="../static/redirect.js"></script>
+
 
 </body>
 </html>

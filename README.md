@@ -3,9 +3,11 @@
 Ever needed to download your YouTube playlist as music? This is the tool you need. Just input the playlist link and download.
 
 ## Requirements
-* Python 3.10
+* Python 3.10+
 * Flask
 * Pytube
+* MoviePy
+* EyeD3
 
 ## Usage
 
